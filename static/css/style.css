@@ -1,0 +1,614 @@
+@import url('http://fonts.cdnfonts.com/css/goudy-text-mt-std');
+@import url('http://fonts.cdnfonts.com/css/zesant');
+@import url('http://fonts.cdnfonts.com/css/rwa-frontliner');
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Open Sans", sans-serif;
+    color: #444444;
+    background-attachment: fixed;
+}
+a{
+    text-decoration: none;
+}
+/* Navbar */
+.navbar .navbar-nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+  }
+
+  
+  
+  .navbar .navbar-collapse {
+   
+    text-align: center;
+    
+  }
+
+.flex{
+    display: flex;
+    justify-content: center;
+}
+#logo {
+    font-family: "Raleway", sans-serif;
+    font-size: 32px;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    font-weight: 400;
+    letter-spacing: 2px;
+    width: 34vw;
+    text-transform: uppercase;
+}
+#logo a {
+    text-decoration: none;
+    color: #222222;
+}
+.nav-link{
+    text-transform: uppercase;
+    font-size: 14px;
+}
+.icons{
+    display: none;
+    visibility: hidden;
+}
+.icons ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+.icons ul li{
+    padding: 0 5px;
+    
+}
+.icons ul img{
+    height: 30px;
+}
+/* Home */
+
+
+#hero{
+    height: 90vh;
+    width: 100%;
+    font-family: nyt-cheltenham,georgia,'times new roman',times,serif;
+    /* background-repeat: no-repeat; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url("/static/img/hero-bg.jpg");
+    background-position-x: right;
+    background-position-y: top;
+    background-attachment: fixed;
+    background-size: cover;
+    
+
+}
+
+#homepage{
+    position: relative;
+    padding-top: 58px;
+    
+    text-align: center;
+    color: #222222;
+    animation: homepage 3s 1;
+   
+}
+.letter {
+    display: inline-block;
+    line-height: 1em;
+  }
+.name{
+    font-family: "Raleway", sans-serif;
+    font-size: 44px;
+    line-height: 36px;
+    letter-spacing: 8px;
+    font-weight: 700;
+    color: #222222;
+    position: relative;
+    animation: text 3s 1;
+}
+#homepage h2{ 
+    color: #6f6f6f;
+    font-size: 25px; 
+    line-height: 24px;
+    animation: second 3s 1;
+}
+
+#hero .btn-about {
+    font-family: "Raleway", sans-serif;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 12px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 12px 40px;
+    border-radius: 50px;
+    transition: 0.5s;
+    margin-top: 30px;
+    color: #fff;
+    background: #34b7a7;
+}
+
+.bi{
+    font-size: 20px;
+}
+
+/* resume */
+.cv{
+    align-self: right;
+    padding: 20px;
+}
+.section-title {
+    text-align: center;
+    padding-bottom: 30px;
+}
+.section-title h2 {
+    font-size: 32px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+.resume{
+    background-color: #fff;
+    padding: 50px;
+}
+.main-row{
+    background-color: rgb(245, 244, 252);
+    width: 90%;
+    margin: auto;
+}
+.resume .resume-title {
+    font-family: "SF UI Text", "Helvetica Neue", "Segoe UI", "Oxygen", "Ubuntu", "Cantarell", "Open Sans", sans-serif;
+    
+    margin: 10px;
+    margin-bottom: 1rem;
+    font-size: 2.1rem;
+    font-weight: 700;
+    /* text-align: center; */
+    line-height: 1;
+    letter-spacing: -0.03em;
+    color: #4831d4;
+}
+.resume-item h4{
+    font-family: "SF UI Text", "Helvetica Neue", "Segoe UI", "Oxygen", "Ubuntu", "Cantarell", "Open Sans", sans-serif;
+    padding: 7px 0;
+    font-size: 1.424em;
+    font-weight: 400;
+    margin-bottom: 7px;
+    color: black;
+    line-height: 1.45;
+    /* Font-weight: 700; */
+    /* font-family: 'Goudy Text MT Std', sans-serif; */
+    display: inline-block;
+}
+.resume-item h5{
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 7px;
+}
+.resume-item p, li{
+    letter-spacing: 1px;
+    line-height: 1.4em;
+    font-size: 16px;
+    margin-bottom: 7px;
+
+}
+.section-title {
+    font-family: "Raleway", sans-serif;
+
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 30px;
+    transition: 0.65s cubic-bezier(0.22, 0.02, 0.34, 1) 0.15s;
+    transition-property: all;
+    transition-duration: 0.65s;
+    transition-timing-function: cubic-bezier(0.22, 0.02, 0.34, 1);
+    transition-delay: 0.15s;
+    
+
+}
+.section-title h2 {
+    font-size: 14px;
+    /* font-weight: bold; */
+    color: #222222;
+    text-transform: uppercase;
+    letter-spacing: 7px;
+    /* margin-top: 20px; */
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    position: relative;
+    transition: all;
+    animation: title 3s 1;
+}
+.section-title h4{
+    width: 45vw;
+    font-family: 'zesant', sans-serif;
+    margin: 20px auto;
+    font-size: 40px;
+    font-weight: 700;
+    animation: header 4s 1;
+}
+.section-title p{
+    width: 38vw;
+    margin: 0 auto;
+    animation: about 3s 1;
+
+}
+.row{
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+   
+}
+.years{
+    padding-top: 10px;
+    padding-right: 30px;
+}
+#honors{
+    justify-content: center;
+    padding: 11px 0px;
+    
+}
+
+.resume-item{
+    width: 60vw;
+    margin: auto;
+}
+/*-----------------------------------------------------------------------------------*/
+/*  About-us
+/*-----------------------------------------------------------------------------------*/
+
+#about {
+    width: 100%;
+    height: auto;
+    /* background: #f7f7f7; */
+    padding-top: 190px;
+  }
+  
+  #about .div-img-bg {
+    padding-bottom: 30px;
+    border: 20px solid #b8a07e;
+  }
+  
+  #about .div-img-bg .about-img img {
+    width: 100%;
+    box-shadow: 0px 0px 85px 0px rgba(0, 0, 0, 0.14);
+    margin-top: -60px;
+    margin-left: 40px;
+    height: 400px;
+    object-fit: cover;
+  }
+  
+  #about .about-descr .p-heading {
+    font-family: 'Playfair Display', serif;
+    font-size: 28px;
+    text-align: left;
+  }
+  
+  #about .about-descr .separator {
+    max-width: 80%;
+    margin-bottom: 0;
+    text-align: left;
+  }
+/*-----------------------------------------------------------------------------------*/
+/*  Portfolio
+/*-----------------------------------------------------------------------------------*/
+
+#portfolio {
+    position: relative;
+    padding-bottom: 50px;
+  }
+  
+  #portfolio .portfolio-list {
+    margin-bottom: 50px;
+  }
+  
+  #portfolio .portfolio-list .nav {
+    display: inline-block;
+    margin: 0;
+  }
+  
+  #portfolio .portfolio-list .nav li {
+    margin: 0 40px 0 0;
+    float: left;
+    font-size: 14px;
+    color: #999999;
+    line-height: 16px;
+    cursor: pointer;
+    font-family: 'Poppins', helvetica;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    -moz-transition: all 0.5s ease-in-out 0s;
+    -ms-transition: all 0.5s ease-in-out 0s;
+    -o-transition: all 0.5s ease-in-out 0s;
+    -webkit-transition: all 0.5s ease-in-out 0s;
+    transition: all 0.5s ease-in-out 0s;
+  }
+  
+  #portfolio .portfolio-list .nav li:hover, #portfolio .portfolio-list .nav li.filter-active  {
+    color: #b8a07e;
+    -moz-transition: all 0.5s ease-in-out 0s;
+    -ms-transition: all 0.5s ease-in-out 0s;
+    -o-transition: all 0.5s ease-in-out 0s;
+    -webkit-transition: all 0.5s ease-in-out 0s;
+    transition: all 0.5s ease-in-out 0s;
+  }
+  
+  #portfolio .portfolio-container {
+    display: inline-block;
+    margin-bottom: 50px;
+    width: 100%;
+  }
+  
+  .portfolio-thumbnail {
+    margin-bottom: 30px;
+    overflow: hidden;
+    min-height: 260px;
+  }
+  
+  .portfolio-thumbnail img {
+    max-width: 100%;
+  }
+  
+
+/* contact style */
+#contact {
+    height: auto;
+    width: 100%;
+}
+.contactForm .row{
+    display: flex;
+    flex-direction: column;
+}
+  .contact-details {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .contact-details li {
+    padding-bottom: 10px;
+  }
+  
+  #contact input, #contact textarea {
+    width: 100%;
+  }
+  
+  
+  #contact  #sendmessage {
+    color: #18d26e;
+    border: 1px solid #18d26e;
+    display: none;
+    text-align: center;
+    padding: 15px;
+    font-weight: 600;
+    margin: 15px;
+  }
+  
+  #contact  #errormessage {
+    color: red;
+    display: none;
+    border: 1px solid red;
+    text-align: center;
+    padding: 15px;
+    font-weight: 600;
+    margin: 15px;
+  }
+  
+  #contact #sendmessage.show, #contact #errormessage.show, #contact .show {
+    display: block;
+  }
+  
+  #contact .validation {
+    color: red;
+    display: none;
+    margin: 0 0 20px;
+    font-weight: 400;
+    font-size: 13px;
+  }
+  /* END OF CONTACT STYLE */
+/* FOOTER STYLE */
+footer{
+    padding: 40px 0px;
+    text-align: center;
+}
+footer ul{
+    /* width: 100vw; */
+    padding: 10px;
+    /* background: #e9e8e6; */
+    display: flex;
+    /* flex-direction: column; */
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+}
+
+footer ul li{
+    font-size: 13px;
+    color: #34b7a7;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding: 8px;
+}
+@keyframes text {
+    0%{
+        color: transparent;
+        margin-bottom: -40px;
+    }    
+    30%{
+        letter-spacing: 25px;
+        margin-bottom: -40px;
+    }
+    85%{
+        letter-spacing: 7px;
+        margin-bottom: -40px;
+    }
+}
+@keyframes second{
+    0%{
+        color: transparent;
+    }
+    85%{
+        color: transparent;
+    }
+
+    
+}
+@keyframes resume { 
+    0%{
+        margin-bottom: -40px;
+
+        visibility: hidden;
+    }
+    30%{
+        margin-bottom: -40px;
+
+        visibility: hidden;
+        display: none;
+    }
+}
+@keyframes header { 
+
+    0%{
+        margin-bottom: 40px;
+        color: transparent;
+        visibility: hidden;
+    }
+    30%{
+        margin-bottom: -40px;
+        color: transparent;
+        /* letter-spacing: 2px; */
+        visibility: hidden;
+        display: none;
+    }
+    100%{
+        
+    }
+}
+@keyframes title {
+    0%{
+        /* color: transparent; */
+        margin-bottom: -40px;
+        letter-spacing: 7px;
+        /* font-size: 28px; */
+    }    
+    30%{
+        letter-spacing: 25px;
+        font-size: 30px;
+        /* margin-bottom: -40px; */
+    }
+    85%{
+        letter-spacing: 7px;
+        /* margin-bottom: -40px; */
+    }
+}
+@keyframes about {
+    0%{
+        color: transparent;
+        margin-bottom: -40px;
+    }    
+    30%{
+       /* color: transparent; */
+        margin-bottom: -40px;
+    }
+    85%{
+        color: transparent;
+        /* margin-bottom: -40px; */
+    }
+}
+@media (max-width: 992px){
+    .navbar{
+       
+        background-color: #fff;
+    }
+    .p{
+        font-size: 12px;
+    }
+    .navbar .navbar-collapse{
+        letter-spacing: 1px;
+        height: 90vh;
+        width: 100%;
+        padding-top: 110px;
+        text-transform: uppercase;
+        background-color: #fff;
+    }
+    .navbar-nav{
+        margin-bottom: 20px;
+    }
+    .icons{
+        display: block;
+        visibility: visible;
+        margin-top: 70px;
+    }
+    #hero::before {
+        content: "";
+        background: rgba(255, 255, 255, 0.8);
+        background-color: rgba(255, 255, 255, 0.8);
+        position: absolute;
+        bottom: 0;
+        top: 0;
+        left: 0;
+        right: 0;
+        opacity: 0.95;
+    }
+    .container{
+        width: 90vw;
+        margin: auto;
+    }
+    #hero h1 {
+        font-size: 28px;
+        line-height: 36px;
+    }
+    #hero h2{
+        font-family: 'Raleway', sans-serif;
+        font-size: 20px;
+        font-family: 400;
+        line-height: 24px;
+        margin: 10px 0 0 0;
+        letter-spacing: 1px;
+    }
+    #homepage{
+        opacity: 1;
+    }
+    .section-title h4{
+        font-size: 24px;
+        font-weight: 700;
+    }
+    .section-title h4{
+        width: 80vw;
+        margin: 20px auto;
+        /* font-size: 18px; */
+        font-weight: 700;
+    }
+    .section-title p{
+        width: 70vw;
+        font-size: 14px;
+        margin: 0 auto;
+    }
+    .row{
+        flex-direction: column;
+
+    }
+    .col-lg-6{ 
+        width: 90vw;
+        margin: 10px auto;
+    }
+    .resume-item h4{
+        font-size: 22px;
+        font-weight: 400;
+        margin-bottom: 7px;
+    }
+}

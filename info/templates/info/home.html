@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<div id='hero'>
+    <div id='homepage'>
+        <h1 class='name text1'>Kelly Clarkson</h1>
+        <h2 class='text2'>I'm a professional illustrator from San Francisco</h2>
+       <a class='btn-about' href="{% url 'info:about'%}">ABOUT ME</a>
+    </div>
+</div>
+{% endblock content %}
