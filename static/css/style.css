@@ -85,8 +85,9 @@ a{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    /* background-position: center; */
+
     /* background-position-x: right;
-    background-position-y: top;
     background-attachment: fixed; */
     /* background-size: cover; */
     background-image: url("/static/img/name.svg");
@@ -217,7 +218,6 @@ a{
 }
 .section-title {
     font-family: "Raleway", sans-serif;
-
     height: 90vh;
     display: flex;
     flex-direction: column;
@@ -435,8 +435,8 @@ a{
   /* END OF CONTACT STYLE */
 /* FOOTER STYLE */
 footer{
-    position: absolute;
     width: 100%;
+    padding-bottom: 45px;
     bottom: 0;
     text-align: center;
 }
@@ -567,20 +567,13 @@ footer ul li{
         visibility: visible;
         margin-top: 70px;
     }
-    #hero::before {
-        content: "";
-        background: rgba(255, 255, 255, 0.8);
-        background-color: rgba(255, 255, 255, 0.8);
-        position: absolute;
-        bottom: 0;
-        top: 0;
-        left: 0;
-        right: 0;
-        opacity: 0.95;
-    }
+  
     .container{
         width: 90vw;
         margin: auto;
+    }
+    #hero{
+        background-position: top;
     }
     #hero h1 {
         font-size: 28px;
@@ -595,6 +588,7 @@ footer ul li{
         letter-spacing: 1px;
     }
     #homepage{
+        
         opacity: 1;
     }
     .section-title h4{
