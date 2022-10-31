@@ -2,30 +2,10 @@
 {% block content %}
 <div class='resume'>
     <div class='banner'>
-        <div class="section-title">
-            <h2>Resume</h2>
-            <h4>ToyFight is an award winning creative agency specialising in design.
-            </h4>
-            <p>We partner with global brands and emerging businesses to create exciting and meaningful experiences, whether digital or non-digital.
-            </p>
-        </div>
-        <div class="main-row">
+       <div class="main-row">
             <div>
-                {% comment %} <div class="resume-item pb-0">
-                    <h3 class="resume-title">Summary</h3>
-
-                    <h4>Alice Barkley</h4>
-                    <p><em>Innovative and deadline-driven Graphic Designer with 3+ years of experience designing and developing user-centered digital/print marketing material from initial concept to final, polished deliverable.</em></p>
-                    <p></p>
-                    <ul>
-                        <li>Portland par 127,Orlando, FL</li>
-                        <li>(123) 456-7891</li>
-                        <li>alice.barkley@example.com</li>
-                    </ul>
-                    <p></p>
-                </div> {% endcomment %}
-                <a class='cv' href="#">Download</a>
-                <div class="resume-item">
+              <br></br>
+              <div class="resume-item">
                     <h1 class="resume-title">Education</h1>
                         {% for ed in education %}
                     <div class='flex' id='honors'>
@@ -35,17 +15,14 @@
                         </div>
                         <div class='details'>
                             <h4 class='hl'>{{ed.course}}</h4>
-                            <p><em>Rochester Institute of Technology, Rochester, NY</em></p>
-                            <p>Qui deserunt veniam. Et sed aliquam labore tempore sed quisquam iusto autem sit. Ea vero voluptatum qui ut dignissimos deleniti nerada porti sand markend</p>
-                        </div>
+                            <p><em>{{ed.school }}</em></p>
+                       </div>
                     </div>
 
                         {% endfor %}
-    
 
                 </div>
             </div>
-           
             <div class="">
                 <div class="resume-item">
                     <h3 class="resume-title">Professional Experience</h3>
@@ -69,8 +46,8 @@
                         </div>
                     </div>
                     {% endfor %}
-                    
-                </div>            
+
+                </div>
             </div>
         </div>
     </div>
