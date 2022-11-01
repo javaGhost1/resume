@@ -1,10 +1,10 @@
 {% load static %}
 
-<nav id='navbar' class="navbar sticky-top navbar-expand-lg navbar-light" style="background: transparent;
+<nav id='navbar' class="navbar navbar-expand-lg navbar-light" style="background: transparent;
 height: 25vh; z-index: 997;
 ">
 <h1 id='logo'>
-    <a href="#"class='logo'>Maina</a>
+    <a href="/"class='logo'>Maina</a>
 </h1>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" style="border:none;">
       <span class="navbar-toggler-icon"></span>
@@ -16,7 +16,7 @@ height: 25vh; z-index: 997;
           <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
         </li>
       <li class="nav-item">
-          <a class="nav-link" href="{% url 'info:resume'%}">Resume</a>
+          <a class="nav-link" target='_blank' href="{% url 'info:resume'%}">Resume</a>
         </li> 
         <li class="nav-item">
           <a class="nav-link" href="{% url 'info:portfolio'%}">Work</a>
