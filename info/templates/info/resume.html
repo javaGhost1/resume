@@ -7,26 +7,22 @@
               <br></br>
               <div class="resume-item">
                     <h1 class="resume-title">Education</h1>
-                        {% for ed in education %}
-                    <div class='flex' id='honors'>
+                   <hr>
+                   <div class='honors ' id='honors'>
+                     {% for ed in schools %}
+                     <div class='details'>
+                        <h4 class='hl'>{{ed.school}}
+                            <p>{{ed.course}},  {{ed.start_year|date:'Y'}} - {{ed.completion_year|date:'Y'}} </p>
 
-                        <div class='years'>
-                            <h5>{{ed.start_year|date:'Y'}} - {{ed.completion_year|date:'Y'}}</h5>
-                        </div>
-                        <div class='details'>
-                            <h4 class='hl'>{{ed.course}}</h4>
-                            <p><em>{{ed.school }}</em></p>
-                       </div>
-                    </div>
-
-                        {% endfor %}
-
+                     </div>
+                     {% endfor %}
                 </div>
             </div>
             <div class="">
                 <div class="resume-item">
                     <h3 class="resume-title">Professional Experience</h3>
-                    {% for work in work %}
+                     <hr>
+                    {% for work in job_experiences %}
                     <div class='flex' id='honors'>
 
                         <div class='years'>
@@ -46,7 +42,7 @@
                         </div>
                     </div>
                     {% endfor %}
-
+                <br>
                 </div>
             </div>
         </div>

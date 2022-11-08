@@ -11,9 +11,9 @@ def about(request):
     return render(request, 'info/about.html')
 
 def resume(request):
-    education = Education.objects.all()
-    work = Work.objects.all()
-    context = {'education': education, 'work': work}
+    schools = School.objects.all()
+    job_experiences = Job_Experience.objects.all()
+    context = {'schools': schools, 'job_experiences': job_experiences}
     return render(request, 'info/resume.html', context)
     
 def portfolio(request):

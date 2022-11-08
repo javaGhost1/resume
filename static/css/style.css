@@ -38,6 +38,9 @@ a{
     display: flex;
     justify-content: center;
 }
+.schools{
+    flex-direction:row; 
+}
 #logo {
     font-family: "Raleway", sans-serif;
     font-size: 32px;

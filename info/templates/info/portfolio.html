@@ -6,28 +6,18 @@
 <div id="portfolio" class="text-center paddsection">
 
     <div class="container">
-      <div class="section-title text-center">
-        <h2>My Portfolio</h2>
-      </div>
-    </div>
-
-    <div class="container">
       <div class="row">
-        <div class="col-md-12">
-
-           <div class="portfolio-container">
-            {% for projo in projects %}
-            <div class="col-lg-4 col-md-6 portfolio-thumbnail all branding uikits webdesign">
-                <a class="popup-img" href="images/portfolio/1.jpg">
-                {% comment %} fix images error {% endcomment %}
-                <img src="{{projo.image.url}}">
-                </a>
-              </div>
+             {% for project in projects %}
+          <div class="col-md-10">
+               <h3 class="text-left">{{project.title}}</h3>
+                <p class="text-left">{{ project.comment }}</p>
+            <hr>
+            </div>
             {% endfor %}
           </div>
         </div>
       </div>
-    </div>
+   </div>
 
   </div>
   <!-- End section portfolio -->
