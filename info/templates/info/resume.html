@@ -1,20 +1,20 @@
 {% extends 'base.html' %}
 {% block content %}
+
 <div class='resume'>
     <div class='banner'>
        <div class="main-row">
             <div>
-              <br></br>
+              <br>
               <div class="resume-item">
                 <h1 class='r-name'>Maina<br> Munuhe</h1>
                 <h2>Expert Frontend developer and UX Engineer.</h2>
                 <p>Engineer valued for driving high-performance accessible web experiences. I design quality, user-friendly and scalable products regardless of stack.</p>
                 <hr>
-                    <h1 class="resume-title">Education</h1>
-                  
-                   <div class='honors ' id='honors'>
-                     {% for ed in schools %}
-                     <div id='honors'>
+
+                <h1 class="resume-title">Education</h1>
+                    {% for ed in education %}
+                    <div id='honors'>
                         <div class='details'>
                             <div class='m-details'>
                                 <h4 class='hl'>{{ed.course}}</h4>
@@ -32,8 +32,8 @@
             <div>
                 <div class="resume-item">
                     <h3 class="resume-title">Professional Experience</h3>
-                    
-                    {% for work in job_experiences %}
+
+                    {% for work in work %}
                     <div id='honors'>
 
                         
