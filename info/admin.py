@@ -4,14 +4,13 @@ from .models import *
 
 # Register your models here.
 admin.site.register(About)
-admin.site.register(Testimonial)
-@admin.register(Education)
-class EducationAdmin(admin.ModelAdmin):
+@admin.register(School)
+class SchoolAdmin(admin.ModelAdmin):
     list_display = ['course', 'slug']
     prepopulated_fields = {'slug': ('course',)}
 
-@admin.register(Work)
-class WorkAdmin(admin.ModelAdmin):
+@admin.register(Job_Experience)
+class Job_ExperienceAdmin(admin.ModelAdmin):
     list_display = ['title', 'slug']
     prepopulated_fields = {'slug': ('title',)}
 

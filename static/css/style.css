@@ -46,6 +46,9 @@ h2{
     display: flex;
     justify-content: center;
 }
+.schools{
+    flex-direction:row; 
+}
 #logo {
     font-family: "Raleway", sans-serif;
     font-size: 32px;
@@ -181,7 +184,9 @@ h2{
 
 /* RESUME */
 .resume{
-    background-color: #fff;
+    background-color:rgb(245, 244, 252);
+    padding-bottom: 5em;
+
    
 }
 .main-row{
@@ -300,7 +305,6 @@ h2{
     flex-direction: column;
    
 }
-
 
 
 .resume-item{
@@ -639,13 +643,10 @@ footer ul li{
     .section-title h4{
         font-size: 24px;
         font-weight: 700;
-    }
-    .section-title h4{
         width: 80vw;
         margin: 20px auto;
-        /* font-size: 18px; */
-        font-weight: 700;
     }
+    
     .section-title p{
         width: 70vw;
         font-size: 14px;
