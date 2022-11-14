@@ -6,39 +6,54 @@
             <div>
               <br></br>
               <div class="resume-item">
+                <h1 class='r-name'>Maina<br> Munuhe</h1>
+                <h2>Expert Frontend developer and UX Engineer.</h2>
+                <p>Engineer valued for driving high-performance accessible web experiences. I design quality, user-friendly and scalable products regardless of stack.</p>
+                <hr>
                     <h1 class="resume-title">Education</h1>
-                   <hr>
+                  
                    <div class='honors ' id='honors'>
                      {% for ed in schools %}
-                     <div class='details'>
-                        <h4 class='hl'>{{ed.school}}
-                            <p>{{ed.course}},  {{ed.start_year|date:'Y'}} - {{ed.completion_year|date:'Y'}} </p>
-
-                     </div>
+                     <div id='honors'>
+                        <div class='details'>
+                            <div class='m-details'>
+                                <h4 class='hl'>{{ed.course}}</h4>
+                                <div class='years'>
+                                    <h5>{{ed.start_year|date:'Y'}} - {{ed.completion_year|date:'Y'}}</h5>
+                                </div>
+                            </div>
+                            <p><em>{{ed.school }}</em></p>
+                       </div>
+                    </div>
                      {% endfor %}
                 </div>
+                <hr>
             </div>
-            <div class="">
+            <div>
                 <div class="resume-item">
                     <h3 class="resume-title">Professional Experience</h3>
-                     <hr>
+                    
                     {% for work in job_experiences %}
-                    <div class='flex' id='honors'>
+                    <div id='honors'>
 
-                        <div class='years'>
-                            <h5>{{work.start_year|date:'Y'}} - {{work.completion_year|date:'Y'}}</h5>
-
-                        </div>
+                        
                         <div class='details'>
-                            <h4>{{work.title}}</h4>
-                            <p><em>{{work.company}}</em></p>
-                            <p></p>
-                            <ul>
-                                <li>{{work.role_one}}</li>
-                                <li>{{work.role_two}}</li>
-                                <li>{{work.role_three}}</li>
-                                <li>{{work.role_four}}</li>
-                            </ul>
+                            <div class='m-details'>
+                                <h4>{{work.title}}</h4>
+                                <div class='years'>
+                                    <h5>{{work.start_year|date:'Y'}} - {{work.completion_year|date:'Y'}}</h5>
+        
+                                </div>
+                            </div>
+
+                                <p><em>{{work.company}}</em></p>
+                                <p></p>
+                                <ul>
+                                    <li>{{work.role_one}}</li>
+                                    <li>{{work.role_two}}</li>
+                                    <li>{{work.role_three}}</li>
+                                    <li>{{work.role_four}}</li>
+                                </ul>
                         </div>
                     </div>
                     {% endfor %}
